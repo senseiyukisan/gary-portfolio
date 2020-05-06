@@ -5,21 +5,20 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
-import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
 
 const ProfilePicture = styled(Image)`
-  border-radius: 50%;
+  border-radius: 25%;
   transition: all 0.25s ease-out;
 
   &:hover {
-    border-radius: 20%;
+    border-radius: 5%;
   }
 `;
 
 const About = () => (
   <Section.Container id="about">
-    <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+    <Section.Header name="About" label="person" />
     <StaticQuery
       query={graphql`
         query AboutMeQuery {
@@ -42,15 +41,6 @@ const About = () => (
         const { aboutMe, profile } = data.contentfulAbout;
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
-            <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-              <Fade bottom>
-                <ReactMarkdown
-                  source={aboutMe.childMarkdownRemark.rawMarkdownBody}
-                  renderers={markdownRenderer}
-                />
-              </Fade>
-            </Box>
-{/* 
             <Box
               width={[1, 1, 2 / 6]}
               style={{ maxWidth: '300px', margin: 'auto' }}
@@ -59,11 +49,20 @@ const About = () => (
                 <ProfilePicture
                   src={profile.image.src}
                   alt={profile.title}
-                  mt={[4, 4, 0]}
-                  ml={[0, 0, 1]}
+                  mt={[3, 3, 0]}
+                  ml={[48, 56, 40]}
+                  mb={[3, 3, 0]}
                 />
               </Fade>
-            </Box> */}
+            </Box>
+            <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
+              <Fade bottom>
+                <ReactMarkdown
+                  source={aboutMe.childMarkdownRemark.rawMarkdownBody}
+                  renderers={markdownRenderer}
+                />
+              </Fade>
+            </Box>
           </Flex>
         );
       }}

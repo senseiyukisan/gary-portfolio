@@ -17,9 +17,10 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled(CardRebass).attrs({
-  bg: 'white',
+  bg: 'black',
+  color: '#69779b',
   boxShadow: 0,
-  borderRadius: 8,
+  borderRadius: 0,
 })`
   position: relative;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,8 @@ export const Card = styled(CardRebass).attrs({
   cursor: ${props => (props.onClick ? 'pointer' : 'default')};
 
   &:hover {
+    color: black;
+    background-color: #69779b;
     top: -10px;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }

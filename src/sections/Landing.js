@@ -5,8 +5,6 @@ import TextLoop from 'react-text-loop';
 import { SectionLink } from 'react-scroll-section';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
-import MouseIcon from '../components/MouseIcon';
-import Triangle from '../components/Triangle';
 
 
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
@@ -60,7 +58,7 @@ const LandingPage = () => (
               <TextLoop interval={5000}>
                 {roles
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
-                  .map(text => (
+                  .map((text) => (
                     <Text width={[300, 500]} key={text}>
                       {text}
                     </Text>
@@ -75,9 +73,6 @@ const LandingPage = () => (
                 </Box>
               ))}
             </Flex>
-            <SectionLink section="about">
-              {({ onClick }) => <MouseIcon onClick={onClick} />}
-            </SectionLink>
           </Fragment>
         );
       }}
