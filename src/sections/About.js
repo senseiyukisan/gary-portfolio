@@ -8,7 +8,7 @@ import Section from '../components/Section';
 import markdownRenderer from '../components/MarkdownRenderer';
 
 const ProfilePicture = styled(Image)`
-  border-radius: 25%;
+  border-radius: 50%;
   transition: all 0.25s ease-out;
 
   &:hover {

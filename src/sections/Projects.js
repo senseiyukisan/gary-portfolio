@@ -36,6 +36,7 @@ const Project = ({
         <Title>
           {name}
         </Title>
+        <p>{description}</p>
         <VideoContainer>
           <iframe
             id="player"
