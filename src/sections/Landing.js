@@ -1,11 +1,11 @@
+/* eslint-disable react/jsx-indent */
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Heading, Flex, Box, Text } from 'rebass';
 import TextLoop from 'react-text-loop';
-import { SectionLink } from 'react-scroll-section';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
-
 
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
@@ -38,35 +38,55 @@ const LandingPage = () => (
         return (
           <Fragment>
             <Heading
-              textAlign="center"
-              as="h1"
+              as="h3"
               color="primary"
-              fontSize={[5, 6, 8]}
-              mb={[3, 4, 5]}
-            >
-              {`Hello, I'm ${name}!`}
-            </Heading>
-
-            <Heading
-              as="h2"
-              color="primary"
-              fontSize={[4, 5, 6]}
+              fontSize={[3, 4, 5]}
               mb={[3, 5]}
               textAlign="center"
               style={centerHorizontally}
             >
-              <TextLoop interval={5000}>
+              <TextLoop interval={3500}>
                 {roles
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
-                  .map((text) => (
+                  .map(text => (
                     <Text width={[300, 500]} key={text}>
                       {text}
                     </Text>
                   ))}
               </TextLoop>
             </Heading>
-
-            <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
+            <Box
+              sx={{
+                width: '100%',
+                height: 0,
+                // paddingBottom: (900 / 16) + '%',
+                position: 'relative',
+                overflow: 'hidden',
+                '& > iframe': {
+                  position: 'absolute',
+                  width: '100%',
+                  height: '100%',
+                  top: 0,
+                  bottom: 0,
+                  left: 0,
+                  border: 0,
+                },
+              }}
+            >
+              <iframe
+                width="100%"
+                height="315"
+                src="https://player.vimeo.com/video/432497948"
+                frameBorder="0"
+                allowFullScreen
+              />
+            </Box>
+            <Flex
+              marginTop="10px"
+              alignItems="center"
+              justifyContent="center"
+              flexWrap="wrap"
+            >
               {socialLinks.map(({ id, ...rest }) => (
                 <Box mx={3} fontSize={[5, 6, 6]} key={id}>
                   <SocialLink {...rest} />

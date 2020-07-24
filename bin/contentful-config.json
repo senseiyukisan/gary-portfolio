@@ -125,6 +125,80 @@
       ]
     },
     {
+      "name": "Reference",
+      "description": "Customer References",
+      "displayField": "name",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        }
+      ],
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jktalg8grsup"
+          }
+        },
+        "id": "reference",
+        "type": "ContentType",
+        "createdAt": "2020-07-22T20:15:35.715Z",
+        "updatedAt": "2020-07-22T20:52:14.591Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2020-07-22T20:52:14.591Z",
+        "firstPublishedAt": "2020-07-22T20:15:36.330Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3IUjX2olIOouxqSEHSDylN"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3IUjX2olIOouxqSEHSDylN"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "3IUjX2olIOouxqSEHSDylN"
+          }
+        }
+      }
+    },
+    {
       "sys": {
         "space": {
           "sys": {

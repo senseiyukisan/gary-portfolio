@@ -5,8 +5,16 @@ import { ScrollingProvider } from 'react-scroll-section';
 import config from 'react-reveal/globals';
 import colors from '../../colors';
 import Helmet from './Helmet';
+import TSBlockBold from '../../static/font-awesome-custom/fonts/tsblockbold.ttf';
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'TS Block Bold';
+    src: url(${TSBlockBold}) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: auto;
+  }
   *,
   *::after,
   *::before { 
@@ -17,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: black;
     box-sizing: border-box; 
     margin: 0;
-    font-family: Cabin, 'Open Sans', sans-serif;
+    font-family: TS Block Bold;
     font-display: swap;
     font-display: fallback;
     overflow-x: hidden;

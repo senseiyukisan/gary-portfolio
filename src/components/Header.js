@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { SectionLinks } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import RouteLink from './RouteLink';
-import Logo from './Logo/Portfolio.svg';
+import Logo from './Logo/G_Emekwa_Logo_white.png';
 
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
@@ -51,14 +51,15 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
-                width="50px"
-                alt="Portfolio Logo"
+                width={['75px', '150px']}
+                alt="Home"
                 onClick={home.onClick}
                 style={{
                   cursor: 'pointer',
                 }}
               />
             );
+
             const navLinks = links.map(({ name, value }) => (
               <RouteLink
                 key={name}
@@ -71,7 +72,7 @@ const Header = () => (
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
+                <Flex mr={[0, 2, 4]}>{navLinks}</Flex>
               </Fragment>
             );
           }}

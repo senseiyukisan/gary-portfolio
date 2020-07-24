@@ -9,10 +9,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ts_blockbold';
+  src: url('fonts/ts_block_bold-webfont.woff2') format('woff2'),
+    url('fonts/ts_block_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 [class^='fa-'],
 [class*=' fa-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'ts_blockbold' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

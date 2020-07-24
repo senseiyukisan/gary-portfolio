@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Text, Box, Link, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import SocialLink from './SocialLink';
-import Impressum from '../pages/Impressum';
 
 const FooterContainer = styled.div`
   min-width: 320px;
@@ -48,9 +47,9 @@ const Footer = () => (
         <Box p={3} backgroundColor="backgroundDark" as="footer">
           <FooterContainer>
             <Fade left>
-              <TextFooter fontSize={[2, 3]}>
-                <span>{`${name}`}</span>
-                <span>, </span>
+              <TextFooter fontSize={[1, 2]}>
+                {/* <span>{`${name}`}</span> */}
+                {/* <span>, </span> */}
                 <Link href="Impressum" mr={1}>
                   Imprint
                 </Link>

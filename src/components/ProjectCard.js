@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const Card = styled(CardRebass).attrs({
+export const ProjectCard = styled(CardRebass).attrs({
   bg: 'black',
   color: 'black',
   boxShadow: 0,
@@ -34,7 +34,9 @@ export const Card = styled(CardRebass).attrs({
     background-color: black;
     top: -10px;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    // webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    // filter: blur(4px);
   }
 `;
 
-export default Card;
+export default ProjectCard;
