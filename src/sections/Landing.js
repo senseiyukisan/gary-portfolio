@@ -41,7 +41,7 @@ const LandingPage = () => (
               as="h3"
               color="primary"
               fontSize={[3, 4, 5]}
-              mb={[3, 5]}
+              mb={[2, 3, 4]}
               textAlign="center"
               style={centerHorizontally}
             >
@@ -56,9 +56,9 @@ const LandingPage = () => (
               </TextLoop>
             </Heading>
             <Box
+              height={[220, 315, 385]}
               sx={{
                 width: '100%',
-                height: 0,
                 // paddingBottom: (900 / 16) + '%',
                 position: 'relative',
                 overflow: 'hidden',
@@ -75,7 +75,7 @@ const LandingPage = () => (
             >
               <iframe
                 width="100%"
-                height="315"
+                height="100%"
                 src="https://player.vimeo.com/video/432497948"
                 frameBorder="0"
                 allowFullScreen

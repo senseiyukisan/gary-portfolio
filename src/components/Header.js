@@ -40,9 +40,9 @@ const Header = () => (
     <Fade top>
       <Flex
         flexWrap="wrap"
-        justifyContent="space-between"
+        justifyContent="space-around"
         alignItems="center"
-        p={3}
+        // p={3}
       >
         <SectionLinks>
           {({ allLinks }) => {
@@ -51,7 +51,7 @@ const Header = () => (
             const homeLink = home && (
               <Image
                 src={Logo}
-                width={['75px', '150px']}
+                width={['100px', '150px', '200px']}
                 alt="Home"
                 onClick={home.onClick}
                 style={{
@@ -72,7 +72,7 @@ const Header = () => (
             return (
               <Fragment>
                 {homeLink}
-                <Flex mr={[0, 2, 4]}>{navLinks}</Flex>
+                <Flex mr={[0, 1, 2]}>{navLinks}</Flex>
               </Fragment>
             );
           }}

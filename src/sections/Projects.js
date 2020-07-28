@@ -83,7 +83,16 @@ const Projects = () => (
         }
       `}
       render={({ allContentfulProject }) => (
-        <Flex flexWrap="wrap" justifyContent="space-evenly">
+        <Flex
+          flexWrap="wrap"
+          justifyContent={[
+            'space-evenly',
+            'space-evenly',
+            'space-evenly',
+            'flex-start',
+          ]}
+          flexDirection="row"
+        >
           {allContentfulProject.edges.map(p => (
             <Project
               name={p.node.name}
