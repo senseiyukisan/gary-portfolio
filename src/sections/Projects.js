@@ -16,9 +16,9 @@ const Title = styled(Text)`
 
 const VideoContainer = styled.div`
   position: relative;
-  padding-bottom: 56.25%;
+  // padding-bottom: 56.25%;
   padding-top: 25;
-  height: 0;
+  height: 100%;
   overflow: hidden;
 `;
 
