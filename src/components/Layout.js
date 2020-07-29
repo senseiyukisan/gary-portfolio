@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: black;
-    box-sizing: border-box; 
+    box-sizing: border-box, content-box; 
     margin: 0;
     font-family: TS Block Bold;
     font-display: swap;

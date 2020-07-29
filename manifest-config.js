@@ -1,7 +1,7 @@
 const colors = require('./colors');
 
 module.exports = {
-  name: 'Gary Emekwa Portfolio',
+  name: 'Gary Emekwa',
   short_name: 'Gary Emekwa',
   start_url: '/',
   background_color: colors.background,
