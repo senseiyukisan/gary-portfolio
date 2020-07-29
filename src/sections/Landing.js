@@ -56,7 +56,7 @@ const LandingPage = () => (
               </TextLoop>
             </Heading>
             <Box
-              height={[280, 330, 380, 400, 450]}
+              height={[250, 350, 400, 450]}
               sx={{
                 width: '100%',
                 // paddingBottom: (900 / 16) + '%',
