@@ -49,14 +49,14 @@ const LandingPage = () => (
                 {roles
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map(text => (
-                    <Text width={[300, 500]} key={text}>
+                    <Text width={[300, 400, 500]} key={text}>
                       {text}
                     </Text>
                   ))}
               </TextLoop>
             </Heading>
             <Box
-              height={[220, 315, 385]}
+              height={[280, 330, 380, 400, 450]}
               sx={{
                 width: '100%',
                 // paddingBottom: (900 / 16) + '%',

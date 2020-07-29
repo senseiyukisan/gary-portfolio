@@ -16,14 +16,6 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-// In die Query unten wieder einbauen wenn benötigt!!!
-// profile {
-//   title
-//   image: resize(width: 450, quality: 100) {
-//     src
-//   }
-// }
-
 const About = () => (
   <Section.Container id="about">
     <Section.Header name="About" label="person" />
@@ -34,6 +26,12 @@ const About = () => (
             aboutMe {
               childMarkdownRemark {
                 rawMarkdownBody
+              }
+            }
+            profile {
+              title
+              image: resize(width: 450, quality: 100) {
+                src
               }
             }
           }
@@ -47,7 +45,7 @@ const About = () => (
               width={[1, 1, 2 / 6]}
               style={{ maxWidth: '300px', margin: 'auto' }}
             >
-              {/* <Fade right>
+              <Fade right>
                 <ProfilePicture
                   src={profile.image.src}
                   alt={profile.title}
@@ -55,7 +53,7 @@ const About = () => (
                   ml={[48, 56, 40]}
                   mb={[3, 3, 0]}
                 />
-              </Fade> */}
+              </Fade>
             </Box>
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
               <Fade bottom>
