@@ -302,17 +302,17 @@
             "linkType": "Entry"
           }
         },
-        {
-          "id": "profile",
-          "name": "Profile",
-          "type": "Link",
-          "localized": false,
-          "required": false,
-          "validations": [],
-          "disabled": false,
-          "omitted": false,
-          "linkType": "Asset"
-        },
+        // {
+        //   "id": "profile",
+        //   "name": "Profile",
+        //   "type": "Link",
+        //   "localized": false,
+        //   "required": false,
+        //   "validations": [],
+        //   "disabled": false,
+        //   "omitted": false,
+        //   "linkType": "Asset"
+        // },
         {
           "id": "aboutMe",
           "name": "About me",
