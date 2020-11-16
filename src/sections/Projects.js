@@ -70,7 +70,6 @@ const Projects = () => (
                 id
                 name
                 url
-                description
                 thumbnail {
                   fluid {
                     src
